@@ -1,9 +1,72 @@
+/* ------ COMMON CLASSES ------ */
+
+.text_grey {
+    color: #5c6a88;
+}
+
+.text_dark {
+    color: #031c4e;
+}
+
+/* Pulsanti del sito */
+.btn {
+    font-weight: 500;
+}
+.btn_outline {
+    background-color: white;
+    border: 1px solid #2285fd; 
+    color: #2285fd;
+}
+.btn_outline:hover {
+    background-color: #2285fd;
+    color: white;
+}
+.btn_white {
+    background-color: white;
+    color: #2285fd;
+}
+.btn_white:hover {
+    background-color: #2285fd;
+    color: white;
+}
+
+
 /* ------ HEADER ------ */
 .logo_img {
     width: 100%;
     max-width: 150px;
 }
 
+.do_navbar ul li,
+.do_navbar ul {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.do_right_nav {
+    text-align: right;
+}
+
+.do_navbar ul li a {
+    font-size: 13px;
+    font-weight: 500;
+
+    color: #031c4e;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: inline-block;
+}
+
+.do_navbar ul li a:hover {
+    color: #2285fd;
+}
+
+
+/* hamb menu color */
 .do_navbar .navbar-toggle .icon-bar {
     background-color: #2285fd;
 }
@@ -43,8 +106,6 @@
 
 
 
-/* ------ COMMON CLASSES ------ */
-
 
 
 
@@ -54,4 +115,41 @@
     height: 200px;
     background-color: rgb(238, 192, 202);
     border: 2px solid rgb(189, 132, 144);
+}
+
+
+/* ------ XS DEVICES - Smartphone - MEDIA QUERIES ------ */
+
+@media all and (max-width: 768px) {
+
+}
+
+
+/* ------ SM DEVICES - Tablet - MEDIA QUERIES ------ */
+
+@media all and (max-width: 991px) {
+    .do_navs.do_collapse{
+        display: none;
+    }
+
+    .navbar-toggle.do_collapsed {
+        display: block;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+}
+
+
+/* ------ MD DEVICES - Desktop - MEDIA QUERIES ------ */
+
+@media all and (min-width: 992px) {
+    .do_navs.do_collapse{
+        display: block;
+    }
+
+    .navbar-toggle.do_collapsed {
+        display: none;
+    }
 }
