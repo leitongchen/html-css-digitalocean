@@ -49,3 +49,9 @@
 
 
 /* ------ UTILITY CLASSES ------ */
+
+.card {
+    height: 200px;
+    background-color: rgb(238, 192, 202);
+    border: 2px solid rgb(189, 132, 144);
+}
