@@ -100,6 +100,8 @@ h2, h3, h4, small {
 
 
 /* LINKS */
+
+/* links su sfondo chiaro */
 a {
     color: #2285fd;
 }
@@ -107,10 +109,18 @@ a:hover {
     color: #031c4e;
 }
 
+/* links su sfondo scuro */
+a.link_light {
+    color: #00d6d2;
+}
+
+
 [class*="fa-chevron"] {
     margin-left: 10px;
     vertical-align: middle;
 }
+
+
 
 /* Background colori */
 
@@ -118,6 +128,9 @@ a:hover {
     background-color: #f3f5f9;
 }
 
+.bg_blue {
+    background-color: #0045c3;
+}
 
 /* SLIDER */
 .slider_block {
@@ -279,7 +292,9 @@ a:hover {
 /* -------------------------
     6^ SECTION - TEST SPEED 
  ------------------------ */
-
+table>tbody>tr:first-child>td {
+    border-top: 0;
+}
 
 
 /* -------------------------
@@ -312,6 +327,10 @@ a:hover {
 @media all and (max-width: 768px) {
     .do_collapse{
         display: none;
+    }
+
+    .box {
+        margin: 30px 0;
     }
 
     /* HEADER NAV */
