@@ -58,6 +58,7 @@ h2, h3, h4, small {
     font-weight: 500;
     position: relative;
 }
+
 .btn_outline {
     background-color: white;
     border: 1px solid #2285fd; 
@@ -67,6 +68,7 @@ h2, h3, h4, small {
     background-color: #2285fd;
     color: white;
 }
+
 .btn_white {
     background-color: white;
     color: #2285fd;
@@ -75,6 +77,18 @@ h2, h3, h4, small {
     background-color: #2285fd; 
     color: white;
 }
+
+.btn-link {
+    color: #031c4e;
+    font-size: 13px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.btn-link:hover {
+    color: #2285fd;
+}
+
 .btn_blue_form {
     color: white;
     background-color: #579aff;
@@ -171,14 +185,19 @@ a.link_light {
 /* ------------- 
     HEADER NAV 
 --------------- */
+.do_navbar {
+    margin-bottom: 0;
+    border: none;
+
+}
+
+.do_navbar .navbar-brand {
+    height: auto;
+}
 
 .logo_img {
     width: 100%;
     max-width: 150px;
-}
-
-.do_navbar {
-    margin-bottom: 0;
 }
 
 .do_navbar ul li,
@@ -196,6 +215,8 @@ a.link_light {
 }
 .do_navbar .navbar-toggle {
     margin-right: 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .do_navbar ul li a {
@@ -213,7 +234,8 @@ a.link_light {
 }
 
 .do_navbar ul li a:hover {
-    color: #2285fd;
+    background-color: rgba(34, 133, 253, .2);
+    text-decoration: none;
 }
 
 /* hamb menu color */
