@@ -33,10 +33,6 @@ h2, h3, h4, small {
     color: #031c4e;
 }
 
-/* .text_gray {
-    color: #5c6a88;  testi su sfondo chiaro 
-} */
-
 .text_lightgray {
     color: #bbcdff; /* testi grigetti su sfondo scuro/colorato */
 }
@@ -51,6 +47,10 @@ h2, h3, h4, small {
 
 .text_white {
     color: white;
+}
+
+.text_darkgray {
+    color:  #7a859d; /* testo più scuro nel footer */
 }
 
 
@@ -327,18 +327,29 @@ table>tbody>tr>td:last-child {
  ------------------------ */
 
 
+/* -------------------------
+    FOOTER 
+ ------------------------ */
 
-
-
-
-
-/* ------ UTILITY CLASSES ------ */
-
-.card {
-    height: 200px;
-    background-color: rgb(238, 192, 202);
-    border: 2px solid rgb(189, 132, 144);
+footer {
+    background-color: #031d4e;
+    color: #a2aabb;
 }
+
+footer ul li {
+    text-transform: capitalize;
+}
+
+footer ul li a {
+    color: #a2aabb;
+}
+
+footer ul li a:hover {
+    color: #2285fd;
+}
+
+
+
 
 
 /* ------ XS DEVICES - Smartphone - MEDIA QUERIES ------ */
