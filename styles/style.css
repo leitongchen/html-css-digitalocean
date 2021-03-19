@@ -171,6 +171,10 @@ a:hover {
 /* -----------------------
     2^ SECTION - TRUST 
  -----------------------*/
+.trust_box {
+    margin-bottom: 20px;
+}
+
 .trust_box .logo_box {
     width: 45%;
     max-height: 150px;
@@ -266,6 +270,10 @@ a:hover {
     }
 
     /* 2^ section TRUST */
+    .trust_box {
+        margin-bottom: 0;
+    }
+
     .trust_box .logo_box {
         width: 15%;
         max-height: 150px;
