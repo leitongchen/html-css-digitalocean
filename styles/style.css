@@ -275,13 +275,15 @@ a.link_light {
     3^ SECTION - DEPLOY 
  ---------------------- */
 .deploy_list {
-    border-left: 1px solid #a2aabb;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 .deploy_list li {
     font-size: 16px;
-    margin-bottom: 20px;
+    line-height: 46px;
+
+    border-left: 1px solid #a2aabb;
+    padding-left: 20px;
 }
 
 .deploy_list a {
@@ -290,6 +292,10 @@ a.link_light {
 .deploy_list a:hover {
     color: #2285fd;
     text-decoration: none;
+}
+
+.deploy_list li:hover {
+    border-left: 2px solid #2285fd;
 }
 
 /* ------------------------
