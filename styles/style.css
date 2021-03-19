@@ -296,6 +296,9 @@ table>tbody>tr:first-child>td {
     border-top: 0;
 }
 
+table>tbody>tr>td:last-child {
+    text-align: right;
+}
 
 /* -------------------------
     7^ SECTION - LOVE
