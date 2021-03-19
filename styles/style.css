@@ -10,12 +10,16 @@ section {
     padding: 50px 0;
 }
 
+/* margine 30px delle .col- */
 .box {
     margin: 15px 0;
 }
 
-/* COLORI e formattazione testi */
+.title_block {
+    margin-bottom: 40px;
+}
 
+/* COLORI e formattazione testi */
 h1 {
     font-size: 42px;
 }
@@ -25,6 +29,9 @@ h6 {
 }
 small {
     font-weight: 500;
+}
+p.lead {
+    font-weight: 400;
 }
 
 h2, h3, h4, small {
@@ -65,7 +72,7 @@ h2, h3, h4, small {
     color: #2285fd;
 }
 .btn_white:hover {
-    background-color: #2285fd;
+    background-color: #2285fd; 
     color: white;
 }
 .btn_blue_form {
@@ -79,9 +86,6 @@ h2, h3, h4, small {
 }
 .btn_shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
-}
-.btn_space {
-    margin-top: 20px;
 }
 
 /* logo inserito sul pulsante - form */
@@ -107,6 +111,7 @@ a:hover {
 a.link_light {
     color: #00d6d2;
 }
+
 [class*="fa-chevron"] {
     margin-left: 10px;
     vertical-align: middle;
@@ -140,6 +145,7 @@ a.link_light {
 
 .slider_arrow {
     font-size: 56px;
+    cursor: pointer;
 }
 
 .next_arrow:hover {
@@ -153,6 +159,7 @@ a.link_light {
     border-radius: 50%;
     
     margin-right: 8px;
+    cursor: pointer;
 }
 .circle.selected_circle {
     background-color: #2285fd;
@@ -314,26 +321,31 @@ footer ul li a {
 footer ul li a:hover {
     color: #2285fd;
 }
+.do_logo {
+    margin: 20px 0;
+}
 
 /* -------------------------
     POPUP FIXED ELEMENT 
  ------------------------ */
 .pop_up {
     position: fixed;
-    bottom: 40px;
-    left: 40px;
+    bottom: 30px;
+    left: 20px;
 
     z-index: 10;
+    margin-right: 20px;
 }
 .popup_img_box {
     width: 80px;
     height: 80px;
+    border-radius: 10px;
 
     background-color: #006aff;
 
-    border-radius: 10px;
-
     position: relative;
+
+    box-shadow: -5px 5px 5px rgba(48, 48, 48, .2);
 }
 .popup_img {
     width: 100%;
@@ -355,6 +367,8 @@ footer ul li a:hover {
     position: absolute;
     top: -5px;
     right: -5px;
+
+    box-shadow: -5px 5px 5px rgba(48, 48, 48, .2);
 }
 
 .popup_box {
@@ -362,10 +376,10 @@ footer ul li a:hover {
     padding: 15px 10px;
 
     border-radius: 10px;
-
     position: relative;
-
     margin-top: 25px;
+
+    box-shadow: -5px 5px 5px rgba(48, 48, 48, .2);
 }
 .popup_box p {
     font-size: 16px;
@@ -474,10 +488,5 @@ footer ul li a:hover {
         position: absolute;
         right: -10px;
         bottom: 25px;
-    }
-
-    .popup_sm_triangle {
-        display: none;
-    }
-   
+    }   
 }
