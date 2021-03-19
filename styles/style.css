@@ -1,4 +1,6 @@
-/* ------ COMMON CLASSES ------ */
+/* -------------------- 
+    COMMON CLASSES 
+-------------------- */
 
 body {
     color: #5c6a88;
@@ -9,13 +11,14 @@ section {
 }
 
 
-
-
-
 /* COLORI e formattazione testi */
 
 h1 {
     font-size: 42px;
+}
+h6 {
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 small {
@@ -95,17 +98,31 @@ h2, h3, h4, small {
 
 /* LINKS */
 a {
-    color: #579aff;
+    color: #2285fd;
 }
 a:hover {
     color: #031c4e;
 }
 
-/* ------ HEADER NAV ------ */
+
+/* Background colori */
+
+.bg_gray {
+    background-color: #f3f5f9;
+}
+
+
+/* ------------- 
+    HEADER NAV 
+--------------- */
 
 .logo_img {
     width: 100%;
     max-width: 150px;
+}
+
+.do_navbar {
+    margin-bottom: 0;
 }
 
 .do_navbar ul li,
@@ -142,39 +159,65 @@ a:hover {
 }
 
 
-/* ------ HERO SECTION ------ */
+/* ---------------
+    HERO SECTION 
+ ---------------- */
 
 #hero {
     background-image: url(../img/bg-banner-home.jpg);
 }
 
 
-/* ------ 2^ SECTION - TRUST ------ */
+/* -----------------------
+    2^ SECTION - TRUST 
+ -----------------------*/
+.trust_box .logo_box {
+    width: 45%;
+    max-height: 150px;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.trust_logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* -----------------------
+    3^ SECTION - DEPLOY 
+ ---------------------- */
 
 
 
-/* ------ 3^ SECTION - DEPLOY ------ */
+/* ------------------------
+    4^ SECTION - FOR 
+ ----------------------- */
 
 
 
-/* ------ 4^ SECTION - FOR ------ */
+/* -------------------------
+    5^ SECTION - FEATURES
+ ------------------------ */
 
 
 
-/* ------ 5^ SECTION - FEATURES ------ */
+/* -------------------------
+    6^ SECTION - TEST SPEED 
+ ------------------------ */
 
 
 
-/* ------ 6^ SECTION - TEST SPEED ------ */
+/* -------------------------
+    7^ SECTION - LOVE
+ ------------------------ */
 
 
 
-/* ------ 7^ SECTION - LOVE ------ */
-
-
-
-/* ------ 8^ SECTION - START ------ */
-
+/* -------------------------
+    8^ SECTION - START 
+ ------------------------ */
 
 
 
@@ -194,13 +237,20 @@ a:hover {
 /* ------ XS DEVICES - Smartphone - MEDIA QUERIES ------ */
 
 @media all and (max-width: 768px) {
+    .do_collapse{
+        display: none;
+    }
 
+    /* HEADER NAV */
+    .navbar-header {
+        float: none;
+    }
 }
 
 
 /* ------ SM DEVICES - Tablet - MEDIA QUERIES ------ */
 
-@media all and (max-width: 991px) {
+@media all and (min-width: 769px) {
 
     .do_collapse{
         display: none;
@@ -213,6 +263,14 @@ a:hover {
     /* HEADER NAV */
     .navbar-header {
         float: none;
+    }
+
+    /* 2^ section TRUST */
+    .trust_box .logo_box {
+        width: 15%;
+        max-height: 150px;
+        padding: 0 5px;
+        display: inline-block;
     }
 }
 
@@ -232,6 +290,12 @@ a:hover {
     /* TESTI */
     h1 {
         font-size: 56px;
+    }
+
+
+    /* HEADER NAV */
+    .navbar-header {
+        float: left;
     }
 
 }
