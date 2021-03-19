@@ -107,6 +107,10 @@ a:hover {
     color: #031c4e;
 }
 
+[class*="fa-chevron"] {
+    margin-left: 10px;
+    vertical-align: middle;
+}
 
 /* Background colori */
 
