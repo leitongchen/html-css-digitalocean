@@ -35,7 +35,7 @@ h2, h3, h4, small {
 
 /* .text_gray {
     color: #5c6a88;  testi su sfondo chiaro 
-}*/
+} */
 
 .text_lightgray {
     color: #bbcdff; /* testi grigetti su sfondo scuro/colorato */
@@ -112,6 +112,52 @@ a:hover {
 
 .bg_gray {
     background-color: #f3f5f9;
+}
+
+
+/* SLIDER */
+.slider_block {
+    width: 100%;
+}
+
+.slider_block>span {
+    display: inline-block;
+}
+
+.slider_block .slide {
+    width: 80%;
+    margin: 0 20px;
+
+    vertical-align: middle;
+}
+
+.slide_img {
+    margin-bottom: 20px;
+}
+
+.slider_arrow {
+    font-size: 56px;
+}
+
+.next_arrow:hover {
+    color: #5c6a88;
+}
+
+.circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2285fd;
+    border-radius: 50%;
+    
+    margin-right: 8px;
+}
+.circle.selected_circle {
+    background-color: #2285fd;
+}
+
+.select_slide {
+    margin-top: 50px;
 }
 
 
