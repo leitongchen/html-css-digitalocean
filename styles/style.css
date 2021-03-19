@@ -191,6 +191,13 @@ a.link_light {
     text-align: right;
 }
 
+.do_navs.navbar-collapse {
+    padding-right: 0;
+}
+.do_navbar .navbar-toggle {
+    margin-right: 0;
+}
+
 .do_navbar ul li a {
     font-size: 13px;
     font-weight: 500;
