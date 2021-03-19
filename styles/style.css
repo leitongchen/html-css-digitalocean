@@ -23,36 +23,28 @@ h6 {
     font-size: 16px;
     text-transform: uppercase;
 }
-
 small {
     font-weight: 500;
 }
 
-
 h2, h3, h4, small {
     color: #031c4e;
 }
-
 .text_lightgray {
     color: #bbcdff; /* testi grigetti su sfondo scuro/colorato */
 }
-
 .text_dark {
     color: #031c4e; /* per titoli */
 }
-
 .text_blue {
     color: #2285fd; /* links, pulsanti, evidenziazioni */
 }
-
 .text_white {
     color: white;
 }
-
 .text_darkgray {
     color:  #7a859d; /* testo più scuro nel footer */
 }
-
 
 /* PULSANTI del sito */
 .btn {
@@ -101,7 +93,6 @@ h2, h3, h4, small {
     transform: translateY(-50%);
 }
 
-
 /* LINKS */
 
 /* links su sfondo chiaro */
@@ -116,21 +107,15 @@ a:hover {
 a.link_light {
     color: #00d6d2;
 }
-
-
 [class*="fa-chevron"] {
     margin-left: 10px;
     vertical-align: middle;
 }
 
-
-
 /* Background colori */
-
 .bg_gray {
     background-color: #f3f5f9;
 }
-
 .bg_blue {
     background-color: #0045c3;
 }
@@ -140,18 +125,15 @@ a.link_light {
     width: 100%;
     margin-top: 100px;
 }
-
 .slider_block>span {
     display: inline-block;
 }
-
 .slider_block .slide {
     width: 80%;
     margin: 0 20px;
 
     vertical-align: middle;
 }
-
 .slide_img {
     margin-bottom: 20px;
 }
@@ -163,7 +145,6 @@ a.link_light {
 .next_arrow:hover {
     color: #5c6a88;
 }
-
 .circle {
     display: inline-block;
     width: 15px;
@@ -176,11 +157,9 @@ a.link_light {
 .circle.selected_circle {
     background-color: #2285fd;
 }
-
 .select_slide {
     margin-top: 50px;
 }
-
 
 /* ------------- 
     HEADER NAV 
@@ -228,15 +207,12 @@ a.link_light {
     background-color: #2285fd;
 }
 
-
 /* ---------------
     HERO SECTION 
  ---------------- */
-
 #hero {
     background-image: url(../img/bg-banner-home.jpg);
 }
-
 
 /* -----------------------
     2^ SECTION - TRUST 
@@ -280,18 +256,13 @@ a.link_light {
     text-decoration: none;
 }
 
-
 /* ------------------------
     4^ SECTION - FOR 
  ----------------------- */
 
-
-
 /* -------------------------
     5^ SECTION - FEATURES
  ------------------------ */
-
-
 
 /* -------------------------
     6^ SECTION - TEST SPEED 
@@ -321,11 +292,9 @@ table>tbody>tr>td:last-child {
     width: 100%;
     margin-bottom: 20px;
 }
-
 /* -------------------------
     8^ SECTION - START 
  ------------------------ */
-
 
 /* -------------------------
     FOOTER 
@@ -335,21 +304,58 @@ footer {
     background-color: #031d4e;
     color: #a2aabb;
 }
-
 footer ul li {
     text-transform: capitalize;
+    margin: 5px 0;
 }
-
 footer ul li a {
     color: #a2aabb;
 }
-
 footer ul li a:hover {
     color: #2285fd;
 }
 
+/* -------------------------
+    POPUP FIXED ELEMENT 
+ ------------------------ */
+.pop_up {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
 
+    z-index: 10;
+}
+.popup_img_box {
+    width: 80px;
+    height: 80px;
 
+    background-color: #006aff;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+.popup_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.do_badge {
+    background-color: rgb(228, 77, 18);
+    border: 2px solid white;
+    border-radius: 50%;
+
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 16px;
+
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
 
 
 /* ------ XS DEVICES - Smartphone - MEDIA QUERIES ------ */
@@ -369,7 +375,6 @@ footer ul li a:hover {
     }
 }
 
-
 /* ------ SM DEVICES - Tablet - MEDIA QUERIES ------ */
 
 @media all and (min-width: 769px) {
@@ -380,7 +385,6 @@ footer ul li a:hover {
     .do_collapsed {
         display: block;
     }
-
 
     /* HEADER NAV */
     .navbar-header {
@@ -400,7 +404,6 @@ footer ul li a:hover {
     }
 }
 
-
 /* ------ MD DEVICES - Desktop - MEDIA QUERIES ------ */
 
 @media all and (min-width: 992px) {
@@ -412,16 +415,13 @@ footer ul li a:hover {
         display: none;
     }
 
-
     /* TESTI */
     h1 {
         font-size: 56px;
     }
 
-
     /* HEADER NAV */
     .navbar-header {
         float: left;
     }
-
 }
