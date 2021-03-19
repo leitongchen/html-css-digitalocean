@@ -10,6 +10,9 @@ section {
     padding: 50px 0;
 }
 
+.box {
+    margin: 15px 0;
+}
 
 /* COLORI e formattazione testi */
 
@@ -192,7 +195,23 @@ a:hover {
 /* -----------------------
     3^ SECTION - DEPLOY 
  ---------------------- */
+.deploy_list {
+    border-left: 1px solid #a2aabb;
+    padding-left: 20px;
+}
 
+.deploy_list li {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.deploy_list a {
+    color: #5c6a88;
+}
+.deploy_list a:hover {
+    color: #2285fd;
+    text-decoration: none;
+}
 
 
 /* ------------------------
