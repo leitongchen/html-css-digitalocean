@@ -1,16 +1,57 @@
 /* ------ COMMON CLASSES ------ */
 
-.text_grey {
+body {
     color: #5c6a88;
 }
 
-.text_dark {
+section {
+    padding: 50px 0;
+}
+
+
+
+
+
+/* COLORI e formattazione testi */
+
+h1 {
+    font-size: 42px;
+}
+
+small {
+    font-weight: 500;
+}
+
+
+h2, h3, h4, small {
     color: #031c4e;
 }
 
-/* Pulsanti del sito */
+/* .text_gray {
+    color: #5c6a88;  testi su sfondo chiaro 
+}*/
+
+.text_lightgray {
+    color: #bbcdff; /* testi grigetti su sfondo scuro/colorato */
+}
+
+.text_dark {
+    color: #031c4e; /* per titoli */
+}
+
+.text_blue {
+    color: #2285fd; /* links, pulsanti, evidenziazioni */
+}
+
+.text_white {
+    color: white;
+}
+
+
+/* PULSANTI del sito */
 .btn {
     font-weight: 500;
+    position: relative;
 }
 .btn_outline {
     background-color: white;
@@ -29,9 +70,39 @@
     background-color: #2285fd;
     color: white;
 }
+.btn_blue_form {
+    color: white;
+    background-color: #579aff;
+    border-color: #579aff;
+}
+.btn_white_form {
+    color: #5c6a88;
+    background-color: white;
+}
+.btn_shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+
+/* logo inserito sul pulsante - form */
+.icon_btn {
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 
-/* ------ HEADER ------ */
+/* LINKS */
+a {
+    color: #579aff;
+}
+a:hover {
+    color: #031c4e;
+}
+
+/* ------ HEADER NAV ------ */
+
 .logo_img {
     width: 100%;
     max-width: 150px;
@@ -65,15 +136,17 @@
     color: #2285fd;
 }
 
-
 /* hamb menu color */
 .do_navbar .navbar-toggle .icon-bar {
     background-color: #2285fd;
 }
 
+
 /* ------ HERO SECTION ------ */
 
-
+#hero {
+    background-image: url(../img/bg-banner-home.jpg);
+}
 
 
 /* ------ 2^ SECTION - TRUST ------ */
@@ -128,14 +201,16 @@
 /* ------ SM DEVICES - Tablet - MEDIA QUERIES ------ */
 
 @media all and (max-width: 991px) {
-    .do_navs.do_collapse{
+
+    .do_collapse{
         display: none;
     }
-
-    .navbar-toggle.do_collapsed {
+    .do_collapsed {
         display: block;
     }
 
+
+    /* HEADER NAV */
     .navbar-header {
         float: none;
     }
@@ -145,11 +220,18 @@
 /* ------ MD DEVICES - Desktop - MEDIA QUERIES ------ */
 
 @media all and (min-width: 992px) {
-    .do_navs.do_collapse{
+
+    .do_collapse{
         display: block;
     }
-
-    .navbar-toggle.do_collapsed {
+    .do_collapsed {
         display: none;
     }
+
+
+    /* TESTI */
+    h1 {
+        font-size: 56px;
+    }
+
 }
