@@ -117,7 +117,7 @@ a.link_light {
     background-color: #f3f5f9;
 }
 .bg_blue {
-    background-color: #0045c3;
+    background: linear-gradient(16deg, rgba(0,31,154,1) 0%, rgba(1,70,197,1) 100%);
 }
 
 /* SLIDER */
@@ -370,7 +370,7 @@ footer ul li a:hover {
 .popup_box p {
     font-size: 16px;
 }
-.popup_triangle {
+.popup_sm_triangle {
     width: 0;
     height: 0;
     border-style: solid;
@@ -448,4 +448,36 @@ footer ul li a:hover {
     .navbar-header {
         float: left;
     }
+
+    /* POPUP */
+    .pop_up {
+        right: 40px;
+    }
+    .popup_img_box {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .popup_box {
+        position: absolute;
+        right: 100px;
+        top: -100px;
+    }
+
+    .popup_md_triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #ffffff;
+
+        position: absolute;
+        right: -10px;
+        bottom: 25px;
+    }
+
+    .popup_sm_triangle {
+        display: none;
+    }
+   
 }
