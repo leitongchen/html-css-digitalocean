@@ -87,6 +87,7 @@ h2, h3, h4, small {
 }
 .btn-link:hover {
     color: #2285fd;
+    box-shadow: none;
 }
 
 .btn_blue_form {
@@ -94,12 +95,18 @@ h2, h3, h4, small {
     background-color: #579aff;
     border-color: #579aff;
 }
+.btn_blue_form:hover {
+    color: white;
+}
 .btn_white_form {
     color: #5c6a88;
     background-color: white;
 }
 .btn_shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+.shadow:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,.7);
 }
 
 /* logo inserito sul pulsante - form */
@@ -182,6 +189,14 @@ a.link_light {
     margin-top: 50px;
 }
 
+/* ZOOM effect */
+.zoom {
+    transition: .2s;
+}
+.zoom:hover {
+    transform: scale(1.1);
+}
+
 /* ------------- 
     HEADER NAV 
 --------------- */
@@ -250,6 +265,10 @@ a.link_light {
     background-image: url(../img/bg-banner-home.jpg);
 }
 
+#hero .panel {
+    margin-bottom: 0;
+}
+
 /* -----------------------
     2^ SECTION - TRUST 
  -----------------------*/
@@ -269,6 +288,11 @@ a.link_light {
     height: 100%;
     object-fit: contain;
     object-position: center;
+
+    transition: transform .2s;
+}
+.trust_logo:hover {
+    transform: scale(1.1);
 }
 
 /* -----------------------
@@ -292,6 +316,7 @@ a.link_light {
 .deploy_list a:hover {
     color: #2285fd;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .deploy_list li:hover {
@@ -346,6 +371,15 @@ footer {
     background-color: #031d4e;
     color: #a2aabb;
 }
+
+footer .social_icon {
+    font-size: 24px;
+    margin-top: 40px;
+}
+footer .social_icon li{
+    margin-right: 15px;
+}
+
 footer ul li {
     text-transform: capitalize;
     margin: 5px 0;
