@@ -188,11 +188,10 @@ a.link_light {
 .do_navbar {
     margin-bottom: 0;
     border: none;
-
 }
 
-.do_navbar .navbar-brand {
-    height: auto;
+.navbar_header {
+    margin-left: -15px; /* allineamento margine sx logo su XS */
 }
 
 .logo_img {
@@ -210,9 +209,6 @@ a.link_light {
     text-align: right;
 }
 
-.do_navs.navbar-collapse {
-    padding-right: 0;
-}
 .do_navbar .navbar-toggle {
     margin-right: 0;
     margin-top: 12px;
@@ -238,9 +234,13 @@ a.link_light {
     text-decoration: none;
 }
 
-/* hamb menu color */
+/* hamb menu */
 .do_navbar .navbar-toggle .icon-bar {
+    width: 30px;
     background-color: #2285fd;
+}
+.do_navbar .navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 6px;
 }
 
 /* ---------------
@@ -441,11 +441,6 @@ footer ul li a:hover {
     .box {
         margin: 30px 0;
     }
-
-    /* HEADER NAV */
-    .navbar-header {
-        float: none;
-    }
 }
 
 /* ------ SM DEVICES - Tablet - MEDIA QUERIES ------ */
@@ -459,9 +454,9 @@ footer ul li a:hover {
         display: block;
     }
 
-    /* HEADER NAV */
-    .navbar-header {
-        float: none;
+    /* HEADER */
+    .navbar_header {
+        margin-left: 0; /* allineamento margine sx logo */
     }
 
     /* 2^ section TRUST */
@@ -494,7 +489,7 @@ footer ul li a:hover {
     }
 
     /* HEADER NAV */
-    .navbar-header {
+    .navbar_header {
         float: left;
     }
 
