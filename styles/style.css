@@ -466,6 +466,9 @@ footer ul li a:hover {
 
     box-shadow: -5px 5px 5px rgba(48, 48, 48, .2);
 }
+.hover_me:hover .do_badge {
+    display: none;
+}
 
 .popup_box {
     background-color: white;
