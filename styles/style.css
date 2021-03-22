@@ -404,6 +404,7 @@ footer ul li a:hover {
 
     z-index: 10;
     margin-right: 20px;
+    cursor: pointer;
 }
 .popup_img_box {
     width: 80px;
@@ -413,7 +414,6 @@ footer ul li a:hover {
     background-color: #006aff;
 
     position: relative;
-
     box-shadow: -5px 5px 5px rgba(48, 48, 48, .2);
 }
 .popup_img {
@@ -449,7 +449,12 @@ footer ul li a:hover {
     margin-top: 25px;
 
     box-shadow: -5px 5px 5px rgba(48, 48, 48, .2);
+    display: none;
 }
+.hover_me:hover .popup_box {
+    display: block;
+}
+
 .popup_box p {
     font-size: 16px;
 }
@@ -464,6 +469,7 @@ footer ul li a:hover {
     top: -10px;
     left: 30px;
 }
+
 
 /* ------ XS DEVICES - Smartphone - MEDIA QUERIES ------ */
 
