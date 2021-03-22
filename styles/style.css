@@ -6,7 +6,8 @@ body {
     color: #5c6a88;
 }
 
-section {
+section,
+footer {
     padding: 50px 0;
 }
 
@@ -182,9 +183,10 @@ a.link_light {
     margin-right: 8px;
     cursor: pointer;
 }
-.circle.selected_circle {
+.circle:hover {
     background-color: #2285fd;
 }
+
 .select_slide {
     margin-top: 50px;
 }
@@ -256,6 +258,31 @@ a.link_light {
 }
 .do_navbar .navbar-toggle .icon-bar+.icon-bar {
     margin-top: 6px;
+}
+
+/* DROPDOWN Menu con HOVER */
+.do_navbar .do_navs .dropdown-menu li {
+    display: block;
+}
+
+.dropdown_box {
+    position: relative;
+}
+
+.do_navbar .dropdown-menu {
+    display: none;
+
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+}
+.dropdown_box:hover .dropdown-menu {
+    display: block;
+}
+
+.do_navbar .do_navs .dropdown_box a {
+    width: 100%;
 }
 
 /* ---------------
