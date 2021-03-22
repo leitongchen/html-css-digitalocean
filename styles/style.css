@@ -139,6 +139,24 @@ a.link_light {
     vertical-align: middle;
 }
 
+.link_arrow {
+    position: relative;
+}
+.link_box:hover .link_arrow {
+    animation-name: slide;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 10px;
+    }
+}
+
+
 /* Background colori */
 .bg_gray {
     background-color: #f3f5f9;
